@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Opgave 3</title>
+</head>
+
+<body>
+    <h1>Opgave 3: String Manipulation</h1>
+    <div id="app">
+        <input id="inputField" v-model="word" placeholder="Type a word">
+
+        <button id="showButton" v-on:click="showWord()">Show</button>
+
+        <div id="outputField" v-if="word">
+            <ol>
+                <li>{{output1}}</li>
+                <li>{{output2}}</li>
+                <li>{{output3}}</li>
+            </ol>
+            <table class="table table-striped">
+                  <tr>
+                    <td scope="row">{{output1}}</td>
+                  </tr>
+                <tbody>
+                  <tr>
+                    <td scope="row">{{output2}}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">{{output3}}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">{{output4}}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">{{output5}}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">{{output6}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
